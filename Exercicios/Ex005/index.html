@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <title>Tempo</title>
+</head>
+<body>
+    <header>
+        <div>
+            <h2>Vamos contar</h2>
+        </div>
+    </header>
+
+    <section class="boddy">
+    <div class="container">
+            <div class="input-group">
+                <label for="number">Inicio</label>
+                 <input type="number" class="not-null" placeholder="Digite um Numero" id="n1" name="n1">
+            </div>
+            <div class="input-group">
+                <label for="number">Fim</label>
+                 <input type="number" class="not-null" placeholder="Digite um Numero" id="n2" name="n2">
+            </div>
+            <div class="input-group">
+                <label for="number">Passo</label>
+                 <input type="number" class="not-null" placeholder="Digite um Numero" id="n3" name="n3">
+            </div> 
+            <div>
+                <button class="input-button" type="button" value="somar" onclick="somar()">Contar</button>
+            </div>
+            <div>
+                <h1>Contando:</h1>
+                <h1 id="res">Resultado</h1>
+            </div>
+        </div>
+    </div>
+
+ 
+    </section>
+
+    <footer>
+        <div class="container">
+            <p> &copy; Desenvolvido por Juan.</p>
+        </div>
+    </footer>
+    
+</body>
+    <script src="./js/script.js"></script>
+</html>

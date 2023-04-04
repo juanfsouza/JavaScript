@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        body {
+            background-color: dodgerblue;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+        }
+
+        div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 20px;
+            border-color: black;
+        }
+
+        .container {
+            padding: 100px;
+            background-color: white;
+            text-align: center;
+            flex-direction: column;
+            
+        }
+        
+        .button {
+            padding: 5px;
+            font-weight: bold;
+            width: 50%;
+            height: 40px;
+            border-color: dodgerblue;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Vamos Contar</h1>
+    <div>
+        <div class="container">
+            <p>Inicio
+                <input type="number" name="number" id="numinicio">
+            </p>
+            <p>Fim
+                <input type="number" name="number" id="numfim">
+            </p>
+            <p>Passo
+                <input type="number" name="number" id="passo">
+            </p>
+            <input type="button" class="button" value="verificar" onclick="verificar()">
+            <div>
+                <p>Contando:</p>
+                <p id="res"></p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+<script>
+    function verificar(){
+    var num1 = (document.getElementById('numinicio').value)
+    var num2 = (document.getElementById('numfim').value)
+    var num3 = (document.getElementById('passo').value)
+    var ires = document.getElementById('res')
+
+    for(var num1 = num1;num1 <= num2;num1++) {
+        ires.innerText += ` > ${num1} ` 
+    }
+
+}
+
+</script>
+</html>
