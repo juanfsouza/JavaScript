@@ -1,0 +1,70 @@
+
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 5px;
+
+
+}
+
+.boddy {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-weight: bolder;
+}
+
+.not-null {
+    height: 20px;
+    width: 100%;
+    margin: 5px;
+    border-radius: 10px;
+    border-color: blue;
+}
+
+.input-button {
+    font-weight: bolder;
+    border-radius: 5px;
+    border-color: rgb(216, 50, 0);
+    width: 100%;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 10px;
+    
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header h2 {
+    color: royalblue;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section .container {
+    border: 2px solid rgb(0, 4, 247);
+    border-radius: 10px;
+    padding: 50px 300px;
+}
+
+section h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
